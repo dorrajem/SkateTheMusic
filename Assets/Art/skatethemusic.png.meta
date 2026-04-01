@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: eaf811dabbd70d84e8a64a73eada0ad0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9182902494304839534
+    second: skatethemusic_0
+  - first:
+      213: 4078487887806629993
+    second: skatethemusic_1
+  - first:
+      213: 8873298614151005088
+    second: skatethemusic_2
+  - first:
+      213: 7286840590259136771
+    second: skatethemusic_3
+  - first:
+      213: -1350818123155471764
+    second: skatethemusic_4
+  - first:
+      213: -1851846307406247758
+    second: skatethemusic_5
+  - first:
+      213: -3676509956482141122
+    second: skatethemusic_6
+  - first:
+      213: 7753617804376419587
+    second: skatethemusic_7
+  - first:
+      213: 7317842571966382569
+    second: skatethemusic_8
+  - first:
+      213: 8018363467109778538
+    second: skatethemusic_9
+  - first:
+      213: -1791406914158526231
+    second: skatethemusic_10
+  - first:
+      213: 4670597320403677027
+    second: skatethemusic_11
+  - first:
+      213: 8910187600807686453
+    second: skatethemusic_12
+  - first:
+      213: -4313058301973909679
+    second: skatethemusic_13
+  - first:
+      213: -5514135913508199936
+    second: skatethemusic_14
+  - first:
+      213: -8570273656918807307
+    second: skatethemusic_15
+  - first:
+      213: -1944592228137459181
+    second: skatethemusic_16
+  - first:
+      213: 4128061527747365030
+    second: skatethemusic_17
+  - first:
+      213: 5357452949068619954
+    second: skatethemusic_18
+  - first:
+      213: 9050522244800202823
+    second: skatethemusic_19
+  - first:
+      213: -8256164538934628618
+    second: skatethemusic_20
+  - first:
+      213: -4584868419019694732
+    second: skatethemusic_21
+  - first:
+      213: 1280550995781597482
+    second: skatethemusic_22
+  - first:
+      213: 3858707861464984379
+    second: skatethemusic_23
+  - first:
+      213: -598522106590975954
+    second: skatethemusic_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skatethemusic_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 346
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67a61c5a29307f70800000000000000
+      internalID: 9182902494304839534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 346
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968827d0023b99830800000000000000
+      internalID: 4078487887806629993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 346
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3cf6aa31a442b70800000000000000
+      internalID: 8873298614151005088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 344
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3092b45d8ee002560800000000000000
+      internalID: 7286840590259136771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 328
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62882de21ee04de0800000000000000
+      internalID: -1350818123155471764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 328
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b88e6c489bec46e0800000000000000
+      internalID: -1851846307406247758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 343
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34f1be6ca96afcc0800000000000000
+      internalID: -3676509956482141122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 343
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d200a00526a9b60800000000000000
+      internalID: 7753617804376419587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 343
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e189403c033e8560800000000000000
+      internalID: 7317842571966382569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 343
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a644c091713f64f60800000000000000
+      internalID: 8018363467109778538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 343
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0076127e4a327e0800000000000000
+      internalID: -1791406914158526231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 345
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f6d8b548b41d040800000000000000
+      internalID: 4670597320403677027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 314
+        width: 74
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5317b3c2a6857ab70800000000000000
+      internalID: 8910187600807686453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 344
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fab4f6350f424c0800000000000000
+      internalID: -4313058301973909679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 330
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002ae101a9ad973b0800000000000000
+      internalID: -5514135913508199936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 330
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc677b2485401980800000000000000
+      internalID: -8570273656918807307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 330
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312a1e0ebab6305e0800000000000000
+      internalID: -1944592228137459181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 328
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8865c8612d94930800000000000000
+      internalID: 4128061527747365030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_18
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 332
+        width: 53
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0aa1a721f795a40800000000000000
+      internalID: 5357452949068619954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 330
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7484619a70ae99d70800000000000000
+      internalID: 9050522244800202823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 314
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6feef9948163c6d80800000000000000
+      internalID: -8256164538934628618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 314
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d9c6ee6764f50c0800000000000000
+      internalID: -4584868419019694732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 315
+        width: 53
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29b554985e65c110800000000000000
+      internalID: 1280550995781597482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_23
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 229
+        width: 200
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ba0ae0b52ec8530800000000000000
+      internalID: 3858707861464984379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatethemusic_24
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 235
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e282d6ea05f91b7f0800000000000000
+      internalID: -598522106590975954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      skatethemusic_0: 9182902494304839534
+      skatethemusic_1: 4078487887806629993
+      skatethemusic_10: -1791406914158526231
+      skatethemusic_11: 4670597320403677027
+      skatethemusic_12: 8910187600807686453
+      skatethemusic_13: -4313058301973909679
+      skatethemusic_14: -5514135913508199936
+      skatethemusic_15: -8570273656918807307
+      skatethemusic_16: -1944592228137459181
+      skatethemusic_17: 4128061527747365030
+      skatethemusic_18: 5357452949068619954
+      skatethemusic_19: 9050522244800202823
+      skatethemusic_2: 8873298614151005088
+      skatethemusic_20: -8256164538934628618
+      skatethemusic_21: -4584868419019694732
+      skatethemusic_22: 1280550995781597482
+      skatethemusic_23: 3858707861464984379
+      skatethemusic_24: -598522106590975954
+      skatethemusic_3: 7286840590259136771
+      skatethemusic_4: -1350818123155471764
+      skatethemusic_5: -1851846307406247758
+      skatethemusic_6: -3676509956482141122
+      skatethemusic_7: 7753617804376419587
+      skatethemusic_8: 7317842571966382569
+      skatethemusic_9: 8018363467109778538
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
