@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e52c7f3ca6014e458487ddf8e01fbd8, type: 3}
+  m_Name: SongLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.SongLibrary
+  songs:
+  - songId: 
+    displayTitle: 
+    composerName: 
+    albumArt: {fileID: 0}
+    musicClip: {fileID: 0}
+    midiFileName: 
+    bpm: 0
+    latencyOffsetMs: 0
+    laneRootPitches: 
+    difficulty: 0
+    starThreshold1: 0
+    starThreshold2: 0
+    starThreshold3: 0
+    notesIntroduced: []
+    educationalTip: 
+  - songId: 
+    displayTitle: 
+    composerName: 
+    albumArt: {fileID: 0}
+    musicClip: {fileID: 0}
+    midiFileName: 
+    bpm: 0
+    latencyOffsetMs: 0
+    laneRootPitches: 
+    difficulty: 1
+    starThreshold1: 0
+    starThreshold2: 0
+    starThreshold3: 0
+    notesIntroduced: []
+    educationalTip: 
+  - songId: 
+    displayTitle: 
+    composerName: 
+    albumArt: {fileID: 0}
+    musicClip: {fileID: 0}
+    midiFileName: 
+    bpm: 0
+    latencyOffsetMs: 0
+    laneRootPitches: 
+    difficulty: 2
+    starThreshold1: 0
+    starThreshold2: 0
+    starThreshold3: 0
+    notesIntroduced: []
+    educationalTip: 
