@@ -2149,6 +2149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1191168867}
   - component: {fileID: 1191168868}
+  - component: {fileID: 1191168869}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2186,6 +2187,19 @@ MonoBehaviour:
   playButton: {fileID: 441848950}
   settingsButton: {fileID: 1699807020}
   settingsPanel: {fileID: 1094080083}
+--- !u!114 &1191168869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191168866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0269c922f59d35e4897768bf1a6d89a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RhythmGame::GameManager
+  songLibrary: {fileID: 11400000, guid: 8165b17b86268bf418af1531cb32e5b8, type: 2}
 --- !u!1 &1293452443
 GameObject:
   m_ObjectHideFlags: 0
