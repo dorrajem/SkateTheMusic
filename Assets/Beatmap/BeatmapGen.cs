@@ -29,7 +29,7 @@ namespace RhythmGame
 
         void Start()
         {
-            SongData song = GameManager.SelectedSong;
+            RhythmGame.SongData song = GameManager.SelectedSong;
             if (song == null) { Debug.LogError("[Conductor] No song selected."); return; }
 
             _beatmap = MidiParser.Parse(song.midiFileName, song.laneRootPitches);
