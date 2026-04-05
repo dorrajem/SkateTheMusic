@@ -13,48 +13,56 @@ MonoBehaviour:
   m_Name: SongLibrary
   m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.SongLibrary
   songs:
-  - songId: 
-    displayTitle: 
-    composerName: 
+  - songId: Ode_To_Joy
+    displayTitle: Ode To Joy
+    composerName: Ludwig Van Beethoven
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: 
-    bpm: 0
-    latencyOffsetMs: 0
-    laneRootPitches: 
+    midiFileName: beethoven-symphony9-4-ode-to-joy-piano-solo.mid
+    bpm: 120
+    laneRootPitches: 050000000400000003000000
     difficulty: 0
-    starThreshold1: 0
-    starThreshold2: 0
-    starThreshold3: 0
-    notesIntroduced: []
-    educationalTip: 
-  - songId: 
-    displayTitle: 
-    composerName: 
+    starThreshold1: 5
+    starThreshold2: 10
+    starThreshold3: 15
+    notesIntroduced:
+    - C
+    - D
+    - E
+    - B
+    - A
+    educationalTip: Quarter notes last a whole beat.
+  - songId: Twinkle_Twinkle
+    displayTitle: Twinkle Twinkle Little Star
+    composerName: Wolfgang Amadeus Mozart
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: 
-    bpm: 0
-    latencyOffsetMs: 0
-    laneRootPitches: 
+    midiFileName: Twinkle Twinkle Little Star.mid
+    bpm: 100
+    laneRootPitches: 010000000200000003000000
     difficulty: 1
-    starThreshold1: 0
-    starThreshold2: 0
-    starThreshold3: 0
-    notesIntroduced: []
-    educationalTip: 
-  - songId: 
-    displayTitle: 
-    composerName: 
+    starThreshold1: 10
+    starThreshold2: 15
+    starThreshold3: 20
+    notesIntroduced:
+    - C
+    - G
+    - A
+    - F
+    - D
+    educationalTip: Half notes last two beats.
+  - songId: Mary_Little_Lamb
+    displayTitle: Mary Had a Little Lamb
+    composerName: Sarah Josepha Hale
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: 
-    bpm: 0
-    latencyOffsetMs: 0
-    laneRootPitches: 
+    midiFileName: Mary had a little lamb.mid
+    bpm: 100
+    laneRootPitches: 050000000400000003000000
     difficulty: 2
-    starThreshold1: 0
-    starThreshold2: 0
-    starThreshold3: 0
-    notesIntroduced: []
+    starThreshold1: 15
+    starThreshold2: 20
+    starThreshold3: 25
+    notesIntroduced:
+    - E
     educationalTip: 

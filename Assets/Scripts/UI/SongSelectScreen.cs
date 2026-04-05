@@ -1,23 +1,51 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Simplified song select — no ScrollView, no runtime spawning.
+// Place 3 SongCard GameObjects directly in the scene.
+// Assign each one in the Inspector slots below.
 public class SongSelectScreen : MonoBehaviour
 {
-    [Header("References")]
+    [Header("Song Library")]
     public SongLibrary songLibrary;
-    public Transform   cardContainer;  // the Content child inside your ScrollView
-    public GameObject  songCardPrefab;
-    public Button      backButton;
+
+    [Header("The 3 song cards — place directly in scene hierarchy")]
+    public SongCard card0;
+    public SongCard card1;
+    public SongCard card2;
+
+    [Header("Back button")]
+    public Button backButton;
 
     void Start()
     {
-        backButton.onClick.AddListener(() => GameManager.Instance.GoToMenu());
+        AudioManager.Instance?.PlayMenuMusic();
 
-        foreach (SongData song in songLibrary.songs)
+        backButton.onClick.AddListener(() =>
         {
-            GameObject go   = Instantiate(songCardPrefab, cardContainer);
-            SongCard   card = go.GetComponent<SongCard>();
-            card.Setup(song);
+            AudioManager.Instance?.PlayButton();
+            GameManager.Instance.GoToMenu();
+        });
+
+        // Wire each card to the matching SongData by index.
+        // If SongLibrary has fewer than 3 songs, extra cards are hidden.
+        SetupCard(card0, 0);
+        SetupCard(card1, 1);
+        SetupCard(card2, 2);
+    }
+
+    void SetupCard(SongCard card, int index)
+    {
+        if (card == null) return;
+
+        if (songLibrary.songs.Length > index)
+        {
+            card.gameObject.SetActive(true);
+            card.Setup(songLibrary.songs[index]);
+        }
+        else
+        {
+            card.gameObject.SetActive(false);
         }
     }
 }

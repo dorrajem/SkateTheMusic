@@ -7,12 +7,14 @@ public class ScoreManager : MonoBehaviour
     public int pointsPerfect = 300;
     public int pointsGood    = 100;
 
+    [Header("References")]
+    public GameplayUI ui;
+
     int              _score;
     int              _combo;
     int              _bestCombo;
     List<NoteResult> _noteResults = new List<NoteResult>();
 
-    // Read by GameplayUI each frame.
     public int Score     => _score;
     public int Combo     => _combo;
     public int BestCombo => _bestCombo;
@@ -32,6 +34,9 @@ public class ScoreManager : MonoBehaviour
             wasHit   = true,
             grade    = grade
         });
+
+        ui?.ShowFeedback(grade, evt.noteName);
+        AudioManager.Instance?.PlayHitFeedback(grade);
     }
 
     public void RegisterMiss(NoteEvent evt)
@@ -43,17 +48,18 @@ public class ScoreManager : MonoBehaviour
             wasHit   = false,
             grade    = HitGrade.Miss
         });
+
+        ui?.ShowFeedback(HitGrade.Miss, evt.noteName);
+        AudioManager.Instance?.PlayHitFeedback(HitGrade.Miss);
     }
 
     public void FinishSong(SongData song)
     {
-        // Save best score.
         string key  = "best_" + song.songId;
         int    prev = PlayerPrefs.GetInt(key, 0);
         if (_score > prev) PlayerPrefs.SetInt(key, _score);
         PlayerPrefs.Save();
 
-        // Fill the payload for the Results scene.
         ResultsPayload.SongData    = song;
         ResultsPayload.FinalScore  = _score;
         ResultsPayload.BestCombo   = _bestCombo;
