@@ -49,7 +49,47 @@ public static class MidiParser
         }
 
         result.Sort((a, b) => a.timeSeconds.CompareTo(b.timeSeconds));
+
+        // ── Melody filter ────────────────────────────────────────────────────
+        // Piano MIDI files contain both a melody (right hand) and accompaniment
+        // (left hand) playing simultaneously. Keep only the highest-pitched note
+        // within each simultaneous group so only one note appears per beat.
+        result = FilterMelody(result);
+
+        Debug.Log("[MidiParser] " + result.Count + " melody notes after filtering.");
         return result;
+    }
+
+    // Groups notes that start within MELODY_WINDOW_SEC of each other and keeps
+    // only the highest-pitched note from each group (= the melody note).
+    const float MELODY_WINDOW_SEC = 0.05f; // 50 ms — tune if needed
+
+    static List<NoteEvent> FilterMelody(List<NoteEvent> notes)
+    {
+        if (notes.Count == 0) return notes;
+
+        var filtered = new List<NoteEvent>(notes.Count);
+        int i = 0;
+
+        while (i < notes.Count)
+        {
+            float      groupTime = notes[i].timeSeconds;
+            NoteEvent  best      = notes[i];
+            i++;
+
+            // Collect everything within the window and pick highest pitch.
+            while (i < notes.Count &&
+                   notes[i].timeSeconds - groupTime < MELODY_WINDOW_SEC)
+            {
+                if (notes[i].midiPitch > best.midiPitch)
+                    best = notes[i];
+                i++;
+            }
+
+            filtered.Add(best);
+        }
+
+        return filtered;
     }
 
     public static string MidiToName(int pitch)

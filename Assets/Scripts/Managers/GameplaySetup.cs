@@ -21,6 +21,16 @@ public class GameplaySetup : MonoBehaviour
         if (conductor   == null) conductor   = GetComponent<BeatmapConductor>();
         if (scoreManager== null) scoreManager= GetComponent<ScoreManager>();
 
+        // InputAdapter may be on a different GO — fall back to scene-wide search.
+        if (input == null)
+        {
+#pragma warning disable CS0618
+            input = FindObjectOfType<InputAdapter>();
+#pragma warning restore CS0618
+            if (input != null)
+                Debug.Log("[GameplaySetup] Found InputAdapter via scene search on: '" + input.gameObject.name + "'");
+        }
+
         // SkaterController lives on a separate Skater GO — search scene-wide.
         if (skater == null)
         {
@@ -47,9 +57,12 @@ public class GameplaySetup : MonoBehaviour
                                                 "Make sure a Skater GameObject with a SkaterController component exists in the scene."); ok = false; }
         if (!ok) return; // stop here — wiring with nulls would crash on input
 
-        Debug.Log("[GameplaySetup] Wired: input=" + input.name +
-                  "  conductor=" + conductor.name +
-                  "  skater=" + skater.name);
+        Debug.Log("[GameplaySetup] ✓ Wired successfully:" +
+                  "\n  input     → '" + input.gameObject.name + "' (" + input.GetType().Name + ")" +
+                  "\n  conductor → '" + conductor.gameObject.name + "'" +
+                  "\n  skater    → '" + skater.gameObject.name + "' at position " + skater.transform.position +
+                  "\n  (If skater position is (960,490,0) or similar, it's the WRONG/invisible SkaterController!" +
+                  " The real Skater should be near X=-5, Y=0 in world space.)");
 
         // ── Wire input events ────────────────────────────────────────────
         input.OnMoveLeft.AddListener(() =>

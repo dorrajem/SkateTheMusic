@@ -647,6 +647,7 @@ MonoBehaviour:
   laneOriginY: -2.5
   slideDuration: 0.18
   overshootFactor: 0.15
+  conductor: {fileID: 0}
 --- !u!212 &518214884
 SpriteRenderer:
   serializedVersion: 2
@@ -2691,6 +2692,110 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485356090}
   m_CullTransparentMesh: 1
+--- !u!1 &1541703900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1541703903}
+  - component: {fileID: 1541703902}
+  - component: {fileID: 1541703901}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1541703901
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541703900}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 3858707861464984379, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.25, y: 1.625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!222 &1541703902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541703900}
+  m_CullTransparentMesh: 1
+--- !u!224 &1541703903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541703900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 16, y: -0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1738019510
 GameObject:
   m_ObjectHideFlags: 0
@@ -3476,10 +3581,11 @@ GameObject:
   - component: {fileID: 2053945380}
   - component: {fileID: 2053945379}
   - component: {fileID: 2053945378}
-  - component: {fileID: 2053945377}
   - component: {fileID: 2053945382}
   - component: {fileID: 2053945381}
   - component: {fileID: 2053945383}
+  - component: {fileID: 2053945384}
+  - component: {fileID: 2053945385}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -3487,21 +3593,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2053945377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053945376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c20eeb585deed4da8ef085b625bcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.ScoreManager
-  pointsPerfect: 300
-  pointsGood: 100
-  ui: {fileID: 2088873814}
 --- !u!114 &2053945378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3517,8 +3608,8 @@ MonoBehaviour:
   notePrefab: {fileID: 1044971956744687257, guid: b9eede84fb6c16149961fcb9149c371e, type: 3}
   noteTypeSprites:
   - {fileID: -3676509956482141122, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
-  - {fileID: 7753617804376419587, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
   - {fileID: 4670597320403677027, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
+  - {fileID: 7753617804376419587, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
   - {fileID: 4670597320403677027, guid: eaf811dabbd70d84e8a64a73eada0ad0, type: 3}
   laneAnchors:
   - {fileID: 171437974}
@@ -3545,7 +3636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.BeatmapConductor
   musicSource: {fileID: 1738019511}
   noteSpawner: {fileID: 2053945378}
-  scoreManager: {fileID: 2053945377}
+  scoreManager: {fileID: 2053945384}
   lookAheadSeconds: 2
   perfectWindowSec: 0.03
   goodWindowSec: 0.08
@@ -3579,8 +3670,8 @@ MonoBehaviour:
   input: {fileID: 2053945382}
   conductor: {fileID: 2053945379}
   skater: {fileID: 518214883}
-  scoreManager: {fileID: 2053945377}
-  ui: {fileID: 2088873814}
+  scoreManager: {fileID: 2053945384}
+  ui: {fileID: 2053945385}
 --- !u!114 &2053945382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3624,33 +3715,28 @@ MonoBehaviour:
   sfxMiss: {fileID: 0}
   sfxButton: {fileID: 0}
   sfxVolume: 0.8
---- !u!1 &2088873813
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2088873820}
-  - component: {fileID: 2088873819}
-  - component: {fileID: 2088873818}
-  - component: {fileID: 2088873815}
-  - component: {fileID: 2088873814}
-  m_Layer: 0
-  m_Name: GameplaySetup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2088873814
+--- !u!114 &2053945384
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088873813}
+  m_GameObject: {fileID: 2053945376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c20eeb585deed4da8ef085b625bcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.ScoreManager
+  pointsPerfect: 300
+  pointsGood: 100
+  ui: {fileID: 2053945385}
+--- !u!114 &2053945385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053945376}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c53de36f738f314bb186a9876f9d75e, type: 3}
@@ -3666,77 +3752,8 @@ MonoBehaviour:
   colorMiss: {r: 0.9, g: 0.3, b: 0.25, a: 1}
   pauseButton: {fileID: 1485356092}
   pauseMenuPanel: {fileID: 1930472703}
-  scoreManager: {fileID: 2053945377}
+  scoreManager: {fileID: 2053945384}
   conductor: {fileID: 2053945379}
---- !u!114 &2088873815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088873813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c20eeb585deed4da8ef085b625bcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.ScoreManager
-  pointsPerfect: 300
-  pointsGood: 100
-  ui: {fileID: 2088873814}
---- !u!114 &2088873818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088873813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4de8853f39b2c8488b575d32b8c716a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.InputAdapter
-  OnMoveLeft:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMoveRight:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHit:
-    m_PersistentCalls:
-      m_Calls: []
-  swipeThresholdPx: 40
---- !u!114 &2088873819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088873813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb88a02741c7d1b4f9f176382f672a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RhythmGame.GameplaySetup
-  input: {fileID: 2088873818}
-  conductor: {fileID: 2053945379}
-  skater: {fileID: 518214883}
-  scoreManager: {fileID: 2088873815}
-  ui: {fileID: 2088873814}
---- !u!4 &2088873820
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088873813}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09186, y: -0.69466, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106549380
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,7 +3898,6 @@ SceneRoots:
   - {fileID: 518214882}
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 2088873820}
   - {fileID: 552410143}
   - {fileID: 1738019512}
   - {fileID: 2053945380}
@@ -3889,3 +3905,4 @@ SceneRoots:
   - {fileID: 1070665009}
   - {fileID: 692656907}
   - {fileID: 359041146}
+  - {fileID: 1541703903}
