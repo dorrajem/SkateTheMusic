@@ -19,10 +19,10 @@ public class InputAdapter : MonoBehaviour
 
     void Update()
     {
-        HandleKeyboard();
-
 #if UNITY_IOS || UNITY_ANDROID
         HandleTouch();
+#else
+        HandleKeyboard();
 #endif
     }
 
@@ -37,7 +37,6 @@ public class InputAdapter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             OnHit?.Invoke();
     }
-
     void HandleTouch()
     {
         if (Input.touchCount == 0) return;

@@ -11,6 +11,10 @@ public class NoteSpawner : MonoBehaviour
     [Header("Lanes")]
     public Transform[] laneAnchors; // 5 empty GameObjects at Y = -4,-2,0,2,4
 
+    [Header("Lane Fallback — used if anchors are missing or mispositioned")]
+    public float laneOriginY  = -4f;  // world Y of lane 0
+    public float laneSpacingY =  2f;  // world Y delta per lane
+
     [Header("Scroll")]
     public float scrollSpeed = 5f;
 
@@ -20,15 +24,33 @@ public class NoteSpawner : MonoBehaviour
 
     readonly List<NoteVisual> _active = new List<NoteVisual>();
 
+    // Returns the correct world Y for a given lane index.
+    float LaneY(int lane)
+    {
+        if (laneAnchors != null && lane < laneAnchors.Length && laneAnchors[lane] != null)
+        {
+            float anchorY = laneAnchors[lane].position.y;
+            // Sanity-check: if the anchor is way off-screen, fall back to computed value.
+            if (Mathf.Abs(anchorY) < 50f)
+                return anchorY;
+
+            Debug.LogWarning("[NoteSpawner] laneAnchors[" + lane + "].position.y = " + anchorY +
+                             " — looks wrong (off-screen). Using computed lane Y instead. " +
+                             "Fix: set LaneAnchors parent to (0,0,0) and give each child its Y.");
+        }
+        return laneOriginY + lane * laneSpacingY;
+    }
+
     public void Spawn(NoteEvent evt, float currentSongTime)
     {
         float secondsUntilHit = evt.timeSeconds - currentSongTime;
         float spawnX          = hitLineX + scrollSpeed * secondsUntilHit;
-        float worldY          = laneAnchors[evt.lane].position.y;
+        float worldY          = LaneY(evt.lane);
 
-        Sprite sprite = (noteTypeSprites.Length > (int)evt.noteType)
-            ? noteTypeSprites[(int)evt.noteType]
-            : noteTypeSprites[0];
+        // Pick sprite — gracefully handle an empty or incomplete array.
+        Sprite sprite = null;
+        if (noteTypeSprites != null && noteTypeSprites.Length > 0)
+            sprite = noteTypeSprites[Mathf.Min((int)evt.noteType, noteTypeSprites.Length - 1)];
 
         GameObject go = Instantiate(notePrefab);
         NoteVisual nv = go.GetComponent<NoteVisual>();

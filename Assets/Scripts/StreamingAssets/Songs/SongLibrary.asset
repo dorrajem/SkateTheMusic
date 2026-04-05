@@ -17,10 +17,15 @@ MonoBehaviour:
     displayTitle: Ode To Joy
     composerName: Ludwig Van Beethoven
     albumArt: {fileID: 0}
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: a87ecedc7a30171488306f1c03031496, type: 3}
     midiFileName: beethoven-symphony9-4-ode-to-joy-piano-solo_midicities_dot_com.mid
     bpm: 120
-    laneRootPitches: 050000000400000003000000
+    laneRootPitches:
+    - 64
+    - 66
+    - 67
+    - 69
+    - 71
     difficulty: 0
     starThreshold1: 5
     starThreshold2: 10
@@ -36,10 +41,15 @@ MonoBehaviour:
     displayTitle: Twinkle Twinkle Little Star
     composerName: Wolfgang Amadeus Mozart
     albumArt: {fileID: 0}
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: 988a72059219918408916a5f45f361d3, type: 3}
     midiFileName: twinkle-twinkle-little-star_midicities_dot_com.mid
     bpm: 100
-    laneRootPitches: 010000000200000003000000
+    laneRootPitches:
+    - 60
+    - 62
+    - 64
+    - 67
+    - 69
     difficulty: 1
     starThreshold1: 10
     starThreshold2: 15
@@ -55,10 +65,15 @@ MonoBehaviour:
     displayTitle: Rondo Alla Turca
     composerName: Wolfgang Amadeus Mozart
     albumArt: {fileID: 0}
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: 46714ad14f9bece4283d77a4ea694d66, type: 3}
     midiFileName: alla-turca_midicities_dot_com.mid
     bpm: 120
-    laneRootPitches: 050000000400000003000000
+    laneRootPitches:
+    - 57
+    - 60
+    - 62
+    - 65
+    - 69
     difficulty: 2
     starThreshold1: 15
     starThreshold2: 20

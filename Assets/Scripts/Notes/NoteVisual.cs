@@ -16,7 +16,24 @@ public class NoteVisual : MonoBehaviour
         Lane         = evt.lane;
         _scrollSpeed = scrollSpeed;
 
-        GetComponent<SpriteRenderer>().sprite = sprite;
+        var sr = GetComponent<SpriteRenderer>();
+        if (sprite != null)
+        {
+            sr.sprite = sprite;
+        }
+        else
+        {
+            // No art assigned yet — render a visible placeholder so notes are
+            // always testable. Assign noteTypeSprites in NoteSpawner's inspector
+            // to replace this with real art.
+            sr.sprite = UnityEngine.Sprite.Create(
+                Texture2D.whiteTexture,
+                new Rect(0, 0, 1, 1),
+                Vector2.one * 0.5f);
+            sr.color = new Color(1f, 0.6f, 0.1f); // orange placeholder
+            sr.transform.localScale = Vector3.one;
+        }
+
         transform.position = new Vector3(worldX, worldY, 0f);
     }
 

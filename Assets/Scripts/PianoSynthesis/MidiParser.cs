@@ -58,15 +58,38 @@ public static class MidiParser
         return NOTE_NAMES[pitch % 12] + octave;
     }
 
+    static readonly int[] DEFAULT_ROOTS = { 60, 62, 64, 67, 69 }; // C4 D4 E4 G4 A4
+    static bool _warnedAboutRoots;
+
     static int PitchToLane(int pitch, int[] roots)
     {
+        // Guard: if the SongData has no lane roots (or corrupted binary data was
+        // deserialized as near-zero values), fall back to a sensible default so
+        // notes distribute across all 5 lanes instead of all landing on lane 0.
+        if (roots == null || roots.Length == 0 || roots[0] < 10)
+        {
+            if (!_warnedAboutRoots)
+            {
+                _warnedAboutRoots = true;
+                Debug.LogWarning("[MidiParser] laneRootPitches is null, empty, or contains " +
+                                 "corrupted values (near-zero). Using default roots " +
+                                 "{60,62,64,67,69} (C4 D4 E4 G4 A4). " +
+                                 "Fix: open your SongLibrary asset, select each song entry, " +
+                                 "and set laneRootPitches to 5 MIDI pitch numbers that cover " +
+                                 "the note range of that song.");
+            }
+            roots = DEFAULT_ROOTS;
+        }
+
         int best = 0, bestDist = int.MaxValue;
         for (int i = 0; i < roots.Length; i++)
         {
             int d = Mathf.Abs(pitch - roots[i]);
             if (d < bestDist) { bestDist = d; best = i; }
         }
-        return best;
+
+        // Clamp so lane index is always valid regardless of roots array length.
+        return Mathf.Clamp(best, 0, roots.Length - 1);
     }
 
     static NoteType DurToNoteType(float dur)
