@@ -18,7 +18,7 @@ MonoBehaviour:
     composerName: Ludwig Van Beethoven
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: beethoven-symphony9-4-ode-to-joy-piano-solo.mid
+    midiFileName: beethoven-symphony9-4-ode-to-joy-piano-solo_midicities_dot_com.mid
     bpm: 120
     laneRootPitches: 050000000400000003000000
     difficulty: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
     composerName: Wolfgang Amadeus Mozart
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: Twinkle Twinkle Little Star.mid
+    midiFileName: twinkle-twinkle-little-star_midicities_dot_com.mid
     bpm: 100
     laneRootPitches: 010000000200000003000000
     difficulty: 1
@@ -51,13 +51,13 @@ MonoBehaviour:
     - F
     - D
     educationalTip: Half notes last two beats.
-  - songId: Mary_Little_Lamb
-    displayTitle: Mary Had a Little Lamb
-    composerName: Sarah Josepha Hale
+  - songId: Turkish_March
+    displayTitle: Rondo Alla Turca
+    composerName: Wolfgang Amadeus Mozart
     albumArt: {fileID: 0}
     musicClip: {fileID: 0}
-    midiFileName: Mary had a little lamb.mid
-    bpm: 100
+    midiFileName: alla-turca_midicities_dot_com.mid
+    bpm: 120
     laneRootPitches: 050000000400000003000000
     difficulty: 2
     starThreshold1: 15
