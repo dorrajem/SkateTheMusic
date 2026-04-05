@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     void OnEnable()
     {
         Time.timeScale = 0f;
+        if (settingsPanel != null) settingsPanel.SetActive(false);
         resumeButton .onClick.AddListener(Resume);
         restartButton.onClick.AddListener(Restart);
         quitButton   .onClick.AddListener(Quit);

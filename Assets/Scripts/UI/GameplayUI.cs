@@ -31,7 +31,6 @@ public class GameplayUI : MonoBehaviour
     public ScoreManager     scoreManager;
     public BeatmapConductor conductor;
 
-    bool      _paused;
     Coroutine _feedbackRoutine;
 
     void Start()
@@ -115,8 +114,8 @@ public class GameplayUI : MonoBehaviour
 
     void TogglePause()
     {
-        _paused        = !_paused;
-        Time.timeScale = _paused ? 0f : 1f;
-        pauseMenuPanel.SetActive(_paused);
+        bool willPause = !pauseMenuPanel.activeSelf;
+        Time.timeScale = willPause ? 0f : 1f;
+        pauseMenuPanel.SetActive(willPause);
     }
 }

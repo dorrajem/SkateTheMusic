@@ -27,7 +27,16 @@ public class InputAdapter : MonoBehaviour
                   " — handling TOUCH only. Keyboard input is in SkaterController.");
     }
 
-    // Only process touch; keyboard is handled directly by SkaterController.
+    void OnEnable()
+    {
+        UnityEngine.InputSystem.EnhancedTouch.EnhancedTouchSupport.Enable();
+    }
+
+    void OnDisable()
+    {
+        UnityEngine.InputSystem.EnhancedTouch.EnhancedTouchSupport.Disable();
+    }
+
     void Update()
     {
         HandleTouch();
@@ -35,19 +44,19 @@ public class InputAdapter : MonoBehaviour
 
     void HandleTouch()
     {
-        if (Input.touchCount == 0) return;
-        Touch touch = Input.GetTouch(0);
+        if (UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches.Count == 0) return;
+        var touch = UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches[0];
 
-        if (touch.phase == UnityEngine.TouchPhase.Began)
+        if (touch.phase == UnityEngine.InputSystem.TouchPhase.Began)
         {
-            _touchStart = touch.position;
+            _touchStart = touch.screenPosition;
             _tracking   = true;
         }
 
-        if (_tracking && touch.phase == UnityEngine.TouchPhase.Ended)
+        if (_tracking && touch.phase == UnityEngine.InputSystem.TouchPhase.Ended)
         {
             _tracking = false;
-            Vector2 delta = touch.position - _touchStart;
+            Vector2 delta = touch.screenPosition - _touchStart;
 
             if (Mathf.Abs(delta.y) >= swipeThresholdPx)
             {

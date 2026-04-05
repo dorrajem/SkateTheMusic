@@ -6,6 +6,7 @@ public class MainMenuUI : MonoBehaviour
     [Header("Buttons")]
     public Button playButton;
     public Button settingsButton;
+    public Button quitButton;
 
     [Header("Panels")]
     public GameObject settingsPanel;
@@ -15,5 +16,6 @@ public class MainMenuUI : MonoBehaviour
         settingsPanel.SetActive(false);
         playButton    .onClick.AddListener(() => GameManager.Instance.GoToSongSelect());
         settingsButton.onClick.AddListener(() => settingsPanel.SetActive(true));
+        if (quitButton != null) quitButton.onClick.AddListener(() => Application.Quit());
     }
 }
